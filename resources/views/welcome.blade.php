@@ -10,22 +10,22 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="antialiased font-sans bg-gray-100 flex justify-center items-center h-screen">
+    <body class="antialiased font-figtree bg-gray-100 flex justify-center items-center h-screen">
         <main
             x-cloak
             x-data="{ show: false }"
             x-init="$nextTick(() => show = true)"
             x-show="show"
             x-transition.scale.origin.left.opacity.duration.750ms
-            class="flex gap-2 bg-white rounded-lg shadow-lg p-10 w-1/2"
+            class="flex gap-7 bg-white rounded-lg shadow-lg p-10 w-1/2"
         >
             <div class="w-1/3">
-                <span>a</span>
+                <img src="{{ asset('img/me.jpg') }}" alt="A photo of me" />
             </div>
 
             <div class="flex-1">
                 <div class="border-b pb-5">
-                    <h1 class="font-semibold text-5xl">
+                    <h1 class="font-semibold text-5xl font-bangers tracking-widest">
                         Theuzin
                     </h1>
 
