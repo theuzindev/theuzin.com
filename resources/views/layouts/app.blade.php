@@ -19,7 +19,7 @@
             x-init="$nextTick(() => show = true)"
             x-show="show"
             x-transition.scale.origin.left.opacity.duration.750ms
-            class="bg-white rounded-lg shadow-lg m-10 md:w-4/5 xl:w-1/2"
+            class="m-10 md:w-4/5 xl:w-1/2"
         >
             {{ $slot }}
         </main>
