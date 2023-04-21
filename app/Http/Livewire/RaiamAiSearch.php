@@ -20,8 +20,10 @@ class RaiamAiSearch extends Component
         $this->validate();
 
         $result = OpenAI::completions()->create([
-            'model' => 'ft-iS09yj2L2iz0Argv1Jwfbk1p',
+            'model' => 'ada:ft-personal-2023-04-21-20-42-20',
             'prompt' => $this->prompt,
+            'max_tokens' => 50,
+            'temperature' => 0.7
         ]);
 
         $this->result = $result['choices'][0]['text'];

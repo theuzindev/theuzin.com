@@ -4,7 +4,7 @@
             type="text"
             wire:model="prompt"
             class="rounded-lg shadow-lg w-full p-10 text-2xl"
-            placeholder="Pergunte qualquer coisa sobre o Raiam Santos"
+            placeholder="Pergunte algo sobre o livro Hackeando Tudo"
             minlength="6"
             required
             autofocus

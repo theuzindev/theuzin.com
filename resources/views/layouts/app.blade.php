@@ -6,7 +6,7 @@
 
         <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
 
-        <title>AI - Pergunte sobre Raiam Santos</title>
+        <title>AI - Raiam Santos</title>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
