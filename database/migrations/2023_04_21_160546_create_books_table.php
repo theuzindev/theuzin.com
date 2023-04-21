@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
-            $table->longText('line');
+            $table->longText('completion');
             $table->timestamps();
         });
     }

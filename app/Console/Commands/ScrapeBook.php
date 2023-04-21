@@ -23,11 +23,11 @@ class ScrapeBook extends Command
 
         $text = $pdf->getText();
 
-        $lines = explode("\n", str_replace("\t", '', $text));
+        $completions = explode("\n", str_replace("\t", '', $text));
 
-        foreach ($lines as $line) {
+        foreach ($completions as $completion) {
             Book::query()->create([
-                'line' => trim($line)
+                'completion' => trim($completion)
             ]);
         }
 
