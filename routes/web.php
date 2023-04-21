@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
-Route::get('raiam-ai', RaiamAISearch::class);
+Route::get('raiam-ai', RaiamAISearch::class)->name('raiam');
