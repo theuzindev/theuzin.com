@@ -1,0 +1,12 @@
+{
+    "preset": "psr12",
+    "rules": {
+        "heredoc_to_nowdoc": false,
+        "concat_space": {
+            "spacing": "one"
+        },
+        "new_with_braces": {
+            "anonymous_class": false
+        }
+    }
+}
