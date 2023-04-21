@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\RaiamAISearch;
+use App\Http\Livewire\RaiamAiSearch;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
-Route::get('/raiam-ai', RaiamAISearch::class)->name('raiam');
+Route::get('/raiam-ai', RaiamAiSearch::class)->name('raiam');
