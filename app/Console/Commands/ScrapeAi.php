@@ -2,8 +2,11 @@
 
 namespace App\Console\Commands;
 
-use App\Services\TxtAiFacade;
+use App\Models\Book;
+use GuzzleHttp\Client;
 use Illuminate\Console\Command;
+use PHPHtmlParser\Dom;
+use PHPHtmlParser\Dom\HtmlNode;
 
 class ScrapeAi extends Command
 {
@@ -13,10 +16,17 @@ class ScrapeAi extends Command
 
     public function handle()
     {
-        TxtAiFacade::scrape();
+        $url = 'https://mundoraiam.com/livros-raiam-santos';
 
-        $this->info('Scrapped!');
+        $response = (new Client)->get($url);
+        $htmlContent = (string) $response->getBody();
 
-        return Command::SUCCESS;
+        $dom = new Dom;
+        $dom->load($htmlContent);
+
+        $dom->find('p.elementor-heading-title.elementor-size-default')
+            ->each(function (HtmlNode $node) {
+                Book::query()->firstOrCreate(['content' => $node->text]);
+            });
     }
 }
