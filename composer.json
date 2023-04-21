@@ -11,6 +11,7 @@
         "laravel/framework": "^10.8",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^2.12",
+        "openai-php/laravel": "^0.4.3",
         "paquettg/php-html-parser": "^2.2"
     },
     "require-dev": {
