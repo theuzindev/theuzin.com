@@ -17,14 +17,14 @@
             x-init="$nextTick(() => show = true)"
             x-show="show"
             x-transition.scale.origin.left.opacity.duration.750ms
-            class="flex gap-7 bg-white rounded-lg shadow-lg p-10 w-1/2"
+            class="flex flex-col md:flex-row md:items-center gap-7 bg-white rounded-lg shadow-lg p-10 m-5 md:w-4/5 xl:w-1/2"
         >
-            <div class="w-1/3">
-                <img src="{{ asset('img/me.jpg') }}" alt="A photo of me" />
+            <div class="m-auto md:m-0">
+                <img src="{{ asset('img/me.jpg') }}" alt="A photo of me" class="rounded-full w-64 h-64 object-cover object-top" />
             </div>
 
             <div class="flex-1">
-                <div class="border-b pb-5">
+                <div class="border-b pb-5 flex flex-col items-center md:items-start">
                     <h1 class="font-semibold text-5xl font-bangers tracking-widest">
                         Theuzin
                     </h1>
