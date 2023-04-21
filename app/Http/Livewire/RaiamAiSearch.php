@@ -2,8 +2,8 @@
 
 namespace App\Http\Livewire;
 
-use App\Services\TxtAiFacade;
 use Livewire\Component;
+use OpenAI\Laravel\Facades\OpenAI;
 
 class RaiamAiSearch extends Component
 {
@@ -19,9 +19,12 @@ class RaiamAiSearch extends Component
     {
         $this->validate();
 
-        $ai = TxtAiFacade::ask($this->prompt);
+        $result = OpenAI::completions()->create([
+            'model' => 'ft-iS09yj2L2iz0Argv1Jwfbk1p',
+            'prompt' => $this->prompt,
+        ]);
 
-        $this->result = nl2br(data_get($ai, 'message'));
+        $this->result = $result['choices'][0]['text'];
     }
 
     public function render()
