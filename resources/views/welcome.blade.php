@@ -26,6 +26,11 @@
                         <x-email />
                         <a href="mailto:eu@theuzin.com">eu@theuzin.com</a>
                     </div>
+
+                    <div class="flex items-center gap-1 text-lg text-gray-400 mt-1">
+                        <x-home />
+                        <div>Recife, Brazil</div>
+                    </div>
                 </div>
 
                 <div class="mt-5 text-xl">
