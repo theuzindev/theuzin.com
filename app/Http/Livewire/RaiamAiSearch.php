@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Services\TxtAiFacade;
 use Livewire\Component;
 
 class RaiamAiSearch extends Component
@@ -18,9 +19,9 @@ class RaiamAiSearch extends Component
     {
         $this->validate();
 
-        // $openAi = TaxBuzzAISearch::ask($this->prompt);
+        $ai = TxtAiFacade::ask($this->prompt);
 
-        // $this->result = nl2br(data_get($openAi, 'message'));
+        $this->result = nl2br(data_get($ai, 'message'));
     }
 
     public function render()
