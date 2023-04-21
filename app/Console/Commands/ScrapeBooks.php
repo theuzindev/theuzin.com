@@ -3,22 +3,22 @@
 namespace App\Console\Commands;
 
 use App\Models\Book;
-use GuzzleHttp\Client;
+use App\Support\HasClient;
 use Illuminate\Console\Command;
 use PHPHtmlParser\Dom;
 use PHPHtmlParser\Dom\HtmlNode;
 
-class ScrapeAi extends Command
+class ScrapeBooks extends Command
 {
-    protected $signature = 'ai:scrape';
+    use HasClient;
 
-    protected $description = 'Scrape for the AI model';
+    protected $signature = 'ai:scrape-books';
+
+    protected $description = 'Scrape raiam books';
 
     public function handle()
     {
-        $url = 'https://mundoraiam.com/livros-raiam-santos';
-
-        $response = (new Client)->get($url);
+        $response = $this->client()->get('livros-raiam-santos');
         $htmlContent = (string) $response->getBody();
 
         $dom = new Dom;
