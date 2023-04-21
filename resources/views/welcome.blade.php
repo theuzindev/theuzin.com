@@ -11,7 +11,14 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased font-sans bg-gray-100 flex justify-center items-center h-screen">
-        <main class="flex gap-2 bg-white rounded-lg shadow-lg p-10 w-1/2">
+        <main
+            x-cloak
+            x-data="{ show: false }"
+            x-init="$nextTick(() => show = true)"
+            x-show="show"
+            x-transition.scale.origin.left.opacity.duration.750ms
+            class="flex gap-2 bg-white rounded-lg shadow-lg p-10 w-1/2"
+        >
             <div class="w-1/3">
                 <span>a</span>
             </div>
