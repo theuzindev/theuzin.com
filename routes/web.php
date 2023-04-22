@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Livewire\DailyRecommendations;
-use App\Http\Livewire\RaiamAiSearch;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
-Route::get('/raiam-ai', RaiamAiSearch::class)->name('raiam');
-
-Route::get('/daily-recommendations', DailyRecommendations::class)->name('daily');
+Route::get('/daily-recommendations', DailyRecommendations::class);
