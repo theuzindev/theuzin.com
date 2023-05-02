@@ -3,13 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="description" content="Are you unsure of what food to order, what book to read, or which video game to play? Look no further than Daily Recommendations! Our platform provides daily recommendations for food, video games, books, and clothing styles. These recommendations are not just based on simple algorithms, but on Artificial Intelligence that responds to your questions in natural language.">
         <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
 
-        <title>AI - Raiam Santos</title>
+        <title>Daily Recommendations</title>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
         @livewireStyles
     </head>
     <body class="antialiased font-figtree bg-gray-100 flex justify-center items-start h-screen">
