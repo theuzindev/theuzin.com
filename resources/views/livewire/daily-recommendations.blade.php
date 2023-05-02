@@ -1,12 +1,12 @@
 <div x-data="{ hasResult: @entangle('result') }">
-    <h1 class="font-bangers text-5xl text-center">Daily Recommendations</h1>
-
-    <div class="bg-sky-100 p-6 rounded-lg mt-10 whitespace-pre-line">Are you unsure of what food to order, what book to read, or which video game to play?
+    <div class="bg-sky-100 p-6 rounded-lg whitespace-pre-line">Are you unsure of what food to order, what book to read, or which video game to play?
 
         Look no further than <strong>Daily Recommendations!</strong>
 
         Our platform provides daily recommendations for food, video games, books, and clothing styles. These recommendations are not just based on simple algorithms, but on Artificial Intelligence that responds to your questions in natural language.
     </div>
+    <h1 class="font-bangers text-5xl text-center mt-10">Daily Recommendations</h1>
+
 
     <div class="flex justify-evenly items-center mt-10 gap-10 flex-wrap">
         <button wire:click="food" class="{{ $selected == 'food' ? 'bg-gradient-to-tr from-gray-300 to-gray-100' : '' }} bg-white hover:animate-pulse hover:bg-gray-50 hover:scale-110 hover:transition-all rounded-full p-10 shadow-md shadow-red-200">
