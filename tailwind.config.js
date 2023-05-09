@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./app.vue",
-    "./nuxt.config.ts",
+    "./components/**/*.vue",
   ],
   theme: {
     extend: {},

@@ -5,7 +5,11 @@ useHead({
 </script>
 
 <template>
-  <main class="bg-white shadow p-10">
+  <main class="bg-white shadow p-16 rounded-lg">
     <ProfileCard />
+
+    <Contact />
+
+    <SvgLinks />
   </main>
 </template>
