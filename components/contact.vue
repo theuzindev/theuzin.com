@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Email from './SVG/email.vue';
-import Home from './SVG/home.vue';
+import Email from './svg/email.vue';
+import Home from './svg/home.vue';
 </script>
 
 <template>

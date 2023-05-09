@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Github from './SVG/github.vue';
-import Linkedin from './SVG/linkedin.vue';
-import Twitter from './SVG/twitter.vue';
+import Github from './svg/github.vue';
+import Linkedin from './svg/linkedin.vue';
+import Twitter from './svg/twitter.vue';
 </script>
 
 <template>
