@@ -5,12 +5,12 @@ import Home from './SVG/home.vue';
 
 <template>
     <div class="border-b mt-2 pb-5 flex flex-col">
-        <div class="flex items-center gap-1 text-lg text-gray-400 mt-3 mx-auto">
+        <div class="flex items-center gap-1 text-lg text-gray-400 mt-2">
             <Email />
             <a href="mailto:eu@theuzin.com">eu@theuzin.com</a>
         </div>
 
-        <div class="flex items-center gap-1 text-lg text-gray-400 mt-1 mx-auto">
+        <div class="flex items-center gap-1 text-lg text-gray-400 mt-1">
             <Home />
             <div>Recife, Brazil</div>
         </div>

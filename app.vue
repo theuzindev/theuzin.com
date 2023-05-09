@@ -1,6 +1,7 @@
 <script setup lang="ts">
-useHead({
-  title: 'Theuzin - Software Engineer'
+useSeoMeta({
+  title: 'Theuzin - Software Engineer',
+  description: 'Passionate Software Engineer, PHP Developer, Web Developer, Laravel',
 })
 </script>
 

@@ -5,7 +5,7 @@ import Twitter from './SVG/twitter.vue';
 </script>
 
 <template>
-    <div class="flex gap-5 mt-5 justify-center text-stone-500">
+    <div class="flex gap-5 mt-5 text-stone-500">
         <a href="https://linkedin.com/in/TheuzinXYZ" title="LinkedIn" target="_blank">
             <Linkedin />
         </a>
