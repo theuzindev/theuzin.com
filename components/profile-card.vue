@@ -11,13 +11,16 @@
             </span>
         </div>
 
-        <div class="flex flex-col ml-5">
-            <span class="text-right text-stone-400 mb-1">#01</span>
-            <h1 class="text-3xl text-stone-500 font-bold tracking-wider">Theuzin</h1>
-            <h2 class="text-sm text-stone-400 font-bold tracking-wider">Rank 1</h2>
+        <div class="flex flex-col justify-between pb-1 ml-5">
+            <span class="text-right text-stone-400">#01</span>
 
-            <PointsBar color="red" />
-            <PointsBar color="blue" />
+            <div>
+                <h1 class="text-3xl text-stone-500 font-bold tracking-wider">Theuzin</h1>
+                <h2 class="text-sm text-stone-400 font-bold tracking-wider">Rank 1</h2>
+
+                <PointsBar color="red" />
+                <PointsBar color="blue" />
+            </div>
         </div>
     </div>
 </template>
