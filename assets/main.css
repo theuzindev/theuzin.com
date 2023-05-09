@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-    @apply bg-zinc-100 h-screen flex items-center justify-center;
+    @apply bg-zinc-100 h-screen flex items-center justify-center font-mono;
 }
