@@ -11,16 +11,41 @@ useSeoMeta({
   twitterSite: '@theuzindev',
   twitterCreator: '@theuzindev',
   twitterTitle: 'Theuzin - Software Engineer',
-  twitterDescription: `I'm a software developer passionate about technology! I usually work with full-stack web development; Currently building my own SaaS.`,
+  twitterDescription: `I'm a software developer passionate about technology! I usually work with full-stack web development; Currently building my own SaaS.`
 })
 </script>
 
 <template>
-  <main class="bg-white shadow p-10 rounded-lg">
-    <ProfileCard />
+  <div class="hero">
+    <div class="hero-content flex-col lg:flex-row gap-7">
+      <img src="~/assets/me.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+      <div>
+        <h1 class="text-5xl font-bold font-mono">Theuzin</h1>
+        <h2 class="text-3xl mt-2">@theuzindev</h2>
+        <p class="py-5">Hey, i'm a software developer! 👋🏾</p>
 
-    <Contact />
+        <a href="mailto:eu@theuzin.com" class="flex items-center gap-2">
+          <Mail />
+          eu@theuzin.com
+        </a>
 
-    <SvgLinks />
-  </main>
+        <div class="join mt-5">
+          <a href="https://github.com/theuzindev" target="_blank" class="btn btn-neutral join-item">
+            <Github />
+            GitHub
+          </a>
+
+          <a href="https://linkedin.com/in/theuzindev" target="_blank" class="btn btn-neutral join-item">
+            <Linkedin />
+            LinkedIn
+          </a>
+
+          <a href="https://twitter.com/theuzindev" target="_blank" class="btn btn-neutral join-item">
+            <Twitter />
+            Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
