@@ -18,7 +18,7 @@ useSeoMeta({
 <template>
   <div class="hero">
     <div class="hero-content flex-col lg:flex-row gap-7">
-      <img src="~/assets/me.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+      <img src="~/assets/me.jpg" class="px-2 max-w-sm rounded-lg" />
       <div>
         <h1 class="text-5xl font-bold font-mono">Theuzin</h1>
         <h2 class="text-3xl mt-2">@theuzindev</h2>
